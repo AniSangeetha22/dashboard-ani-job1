@@ -43,7 +43,7 @@ header p{
     border-radius: 5px;
     font-size: 1.1rem;
 
-    @media screen  and (max-width:768px){
+    @media screen  and (max-width:1080px){
         width: 90%;
     }
    

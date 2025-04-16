@@ -8,6 +8,7 @@ import {
   ShoppingCart,
 } from "lucide-react";
 
+
 import { useContext } from "react";
 import ProductContext from "../context/ProductContext";
 import phoeniximage from "../asserts/heroimage/phoenixlogo.jpg";

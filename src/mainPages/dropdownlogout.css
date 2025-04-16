@@ -2,7 +2,7 @@
     position: absolute;
     width: 160px;
     height: 160px;
-    margin-top: 40px;
+    margin-top: 40px; 
     /* margin-left: 1900px; */
     margin-left: -50px;
     background-color: #ccc;
@@ -10,12 +10,21 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: start;
-    cursor: pointer;
+    /* cursor: pointer; */
     border:1px solid gray ; 
     border-radius: 5px;
+    color: #bc6c25;
+   font-size: 16px;
+    font-weight: 500;
     z-index:999;
     
  }
+ /* .dropdownlogout p{
+   color: #bc6c25;
+   font-size: 16px;
+    font-weight: 500;
+ } */
+
  /* .dropdownlogout ul{
     display: flex;
     flex-direction: column;
@@ -29,11 +38,13 @@
  .dropdownli{
     cursor: pointer;
  }
- .dropdownli, .dropdownspan{
-    text-decoration: none;
+ .dropdownli{
+   text-decoration: none;
     font-size: 16px;
     font-weight: 500;
     color: #bc6c25;
+    
+   
  }
 
  /* .dropdownlogout ul{

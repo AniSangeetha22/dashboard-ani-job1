@@ -4,45 +4,39 @@ import LoginContext from "../context/LoginContext";
 import "./dropdownlogout.css";
 
 export const DropdownLogout = () => {
-  const { user, setUser, logout } = useContext(LoginContext);
+  const { usersdata, user, setUser, logout } = useContext(LoginContext);
   const navigate = useNavigate();
 
   // Logout function
   const handlelogout = () => {
     logout();
   };
+  console.log("From dropdownLogut");
+  console.log(user.email);
 
   return (
     <div className="dropdownlogout">
-      <div>
-        <div>{user === null ? "pls login" : user.email}</div>
-      </div>
+      <p>{user === null ? "pls login" : user.email}</p>
 
-       
-          <Link to="/" className="dropdownli">
-            Home
-          </Link>
-    
-        
-          <Link to="/onlineshopping" className="dropdownli">
-            Online Shopping
-          </Link>
-        
-          <Link to="/loginfile" className="dropdownli">
-            Login
-          </Link>
-        
-          <Link to="/registerfile" className="dropdownli">
-            Register
-          </Link>
-     
+      <Link to="/" className="dropdownli">
+        Home
+      </Link>
 
-      
-          <span className="dropdownspan" onClick={handlelogout}>
-            Logout
-          </span>
-     
+      <Link to="/onlineshopping" className="dropdownli">
+        Online Shopping
+      </Link>
 
+      <Link to="/loginfile" className="dropdownli">
+        Login
+      </Link>
+
+      <Link to="/registerfile" className="dropdownli">
+        Register
+      </Link>
+
+      <span className="dropdownspan" onClick={handlelogout}>
+        Logout
+      </span>
     </div>
   );
 };
